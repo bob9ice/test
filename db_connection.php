@@ -1,10 +1,10 @@
 <?php
 // database.php
 function getConnection() {
-    $host = "localhost";
-    $dbname = "herbafil";
-    $username = "root";
-    $password = "";
+    $host = "sql105.infinityfree.com";
+    $dbname = "if0_38500375_herbafil";
+    $username = "if0_38500375";
+    $password = "8UwTeFyjfcBkK";
     
     try {
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
