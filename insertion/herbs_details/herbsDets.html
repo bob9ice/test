@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Details</title>
+</head>
+<body>
+    <h1>Insert Herbal Details</h1>
+    <form action="insert.php" method="POST">
+        <input type="hidden" name="action" value="insertHerbalDetail">
+        <label for="herbName">Herb Name:</label>
+        <input type="text" id="herbName" name="herbName"><br><br>
+
+        <label for="herbDescription">Herb Description:</label>
+        <textarea id="herbDescription" name="herbDescription"></textarea><br><br>
+
+        <label for="herbImage">Herb Image URL:</label>
+        <input type="text" id="herbImage" name="herbImage"><br><br>
+
+        <input type="submit" value="Insert">
+    </form>
+
+    <h1>Insert Herbal Benefits</h1>
+    <form action="insert.php" method="POST">
+        <input type="hidden" name="action" value="insertHerbalBenefits">
+        <label for="herbIdBenefits">Herb ID:</label>
+        <input type="number" id="herbIdBenefits" name="herbId"><br><br>
+
+        <label for="benefitDescription">Benefit Description:</label>
+        <textarea id="benefitDescription" name="benefitDescription"></textarea><br><br>
+
+        <label for="benefitImageUrl">Benefit Image URL:</label>
+        <input type="text" id="benefitImageUrl" name="benefitImageUrl"><br><br>
+
+        <input type="submit" value="Insert">
+    </form>
+
+    <h1>Insert Herbal Steps</h1>
+    <form action="insert.php" method="POST">
+        <input type="hidden" name="action" value="insertHerbalSteps">
+        <label for="herbIdSteps">Herb ID:</label>
+        <input type="number" id="herbIdSteps" name="herbId"><br><br>
+
+        <label for="stepTitle">Step Title:</label>
+        <input type="text" id="stepTitle" name="stepTitle"><br><br>
+
+        <label for="stepDetails">Step Details:</label>
+        <textarea id="stepDetails" name="stepDetails"></textarea><br><br>
+
+        <input type="submit" value="Insert">
+    </form>
+
+    <h1>Get Herbal Details</h1>
+    <form action="insert.php" method="GET">
+        <input type="hidden" name="action" value="getHerbalDetails">
+        <input type="submit" value="Get Details">
+    </form>
+
+    <h1>Get Herbal Benefits</h1>
+    <form action="insert.php" method="GET">
+        <input type="hidden" name="action" value="getHerbalBenefits">
+        <input type="submit" value="Get Benefits">
+    </form>
+
+    <h1>Get Herbal Steps</h1>
+    <form action="insert.php" method="GET">
+        <input type="hidden" name="action" value="getHerbalSteps">
+        <input type="submit" value="Get Steps">
+    </form>
+</body>
+</html>
